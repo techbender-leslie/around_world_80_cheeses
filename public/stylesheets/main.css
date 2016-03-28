@@ -1,0 +1,71 @@
+.container {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#mouse-house {
+	margin-right: 0;
+}
+
+.jumbotron {
+background-image: url(../images/mouse_in_action.jpg);
+height: 700px;
+width: auto;
+background-size: cover;
+background-repeat: no-repeat;
+color: white;
+margin-left: 150px;
+padding-top: 10px;
+}
+
+#cheese-button {
+	margin-top: 200px;
+}
+
+#cheese-welcome {
+	text-align: center;
+	font-size: 84px;
+	font-weight: 700;
+	/*font-family: 'Julius Sans One', sans-serif;*/
+	font-family: 'Neuton', serif;
+}
+
+h1#big-intro {
+	font-family: 'Neuton', serif;
+	font-size: 80px;
+	margin-top: 10px;
+}
+
+
+#cheese-list {
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+h1#cheese-name {
+	margin-bottom: 0;
+	margin-top: 5px;
+	font-family: 'Neuton', serif;
+}
+
+h3#cheese-country {
+	margin-top: 5px;
+	margin-bottom: 0;
+	color: darkorange;
+}
+
+h4#cheese-region {
+	margin-top: 0;
+}
+
+.some-indent {
+	text-indent: 25px;
+}
+
+ body {
+	background: gold;
+	background-image: url(../images/cheese_back.jpg);
+	background-size: cover;
+	background-repeat: vertical;
+	opacity: 0.9;
+}

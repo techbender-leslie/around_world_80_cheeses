@@ -1,0 +1,99 @@
+
+<h1 id="cheese-welcome">Welcome to the land of cheese</h1>
+<br>
+
+<div class="well col-sm-4">
+	<h4>Add a New Cheese</h4>
+			<form ng-submit="index.createCheese()">
+				<div class="form-group">
+					<input type="text" ng-model="index.cheese.name" class="form-control" id="cheese_name" placeholder="Name">
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="index.cheese.rating" class="form-control" id="cheese_rating"placeholder="Star Rating (1-5)">
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="index.cheese.type" class="form-control" id="cheese_type"placeholder="Type of cheese">
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="index.cheese.region" class="form-control" id="cheese_region" placeholder="Region">
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="index.cheese.country" class="form-control" id="cheese_country"
+					placeholder="Country">
+				</div>
+				<div class="form-group">
+					<textarea ng-model="index.cheese.description" class="form-control" id="cheese_description" placeholder="Description"></textarea>
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="index.cheese.image" class="form-control" id="cheese_image" placeholder="Image">
+				</div>
+				<input type="submit" value="Save Cheese" class="btn btn-success">
+			</form>
+	<hr>
+</div>
+
+<div class="col-lg-7 col-lg-offset-1">
+	<div class="panel panel-default" id="cheese-list">
+		<ul class="list-group">
+			<li ng-repeat="cheese in index.cheeses" class="list-group-item">
+
+				<div ng-hide="cheese.editForm">
+					<div class="pull-right">
+						<a href="#" ng-click="cheese.editForm = true"><h2><i class="fa fa-pencil"></i></h2></a>
+						<a href="#" ng-click="index.deleteCheese(cheese)"><h2><i class="fa fa-times"></i></h2></a>
+					</div>
+					
+					<img ng-src="{{cheese.image}}" class="img-responsive">
+					
+					<h1 class="list-group-item-text" id="cheese-name">{{cheese.name}}</h1>
+					<br>
+					<!-- <div class="some-indent"> -->
+					<blockquote> 
+						<h4 class="list-group-item-text" id="cheese-rating"><b>STARS: </b>{{cheese.rating}}</h4>
+						<h3 class="list-group-item-text" id="cheese-country">{{cheese.country}} - <span><em>{{cheese.region}}</em></span> </h3>
+					<!-- </div> -->
+			
+					<br>
+					
+						<p> {{cheese.description}} </p>
+						<footer>Most likely <cite title="Source Title">Wikipedia</cite></footer>
+					</blockquote>
+					<hr>
+				</div>
+
+				<form ng-show="cheese.editForm" ng-submit="index.updateCheese(cheese)">
+				<div class="form-group">
+					<input type="text" ng-model="cheese.name" class="form-control" id="cheese_name" placeholder="Name">
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="cheese.rating" class="form-control" id="cheese_rating"placeholder="Rating (1-5)">
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="cheese.type" class="form-control" id="cheese_type"placeholder="Type of cheese">
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="cheese.region" class="form-control" id="cheese_region" placeholder="Region">
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="cheese.country" class="form-control" id="cheese_country"
+					placeholder="Country">
+				</div>
+				<div class="form-group">
+					<textarea ng-model="cheese.description" class="form-control" id="cheese_description" placeholder="Description"></textarea>
+				</div>
+				<div class="form-group">
+					<input type="text" ng-model="cheese.image" class="form-control" id="cheese_image" placeholder="Image">
+				</div>
+				<input type="submit" value="Save Cheese" class="btn btn-success">
+			</form>
+		</div>
+	</li>
+</ul>
+</div>
+</div>
+
+
+		
+
+
+

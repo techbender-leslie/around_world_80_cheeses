@@ -1,0 +1,55 @@
+<!-- main layout page -->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="cheese">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- font awesome -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Neuton:700' rel='stylesheet' type='text/css'>
+
+	<!-- angular -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+
+  <!-- angular-ui-router -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+
+  <!-- angular-resource -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.js"></script>
+
+	<!-- custom script (angular app) -->
+	<script type="text/javascript" src="javascripts/app.js"></script>
+  <script type="text/javascript" src="javascripts/home_controller.js"></script>
+  <script type="text/javascript" src="javascripts/routes.js"></script>
+
+	
+  <title>Cheese Cheese</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Cheestastic</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="allcheeses">All Cheeses</a></li>
+    </ul>
+</nav>
+	<div class="container" id="mouse-house">
+    <!-- this is where we inject our content -->
+		<div data-ui-view></div>  
+	</div>
+</body>
+</html>

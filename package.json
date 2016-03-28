@@ -1,0 +1,17 @@
+{
+  "name": "cheestic",
+  "version": "2.0.0",
+  "description": "All things cheese",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TechBender Leslie",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "hbs": "^4.0.0",
+    "mongoose": "^4.4.10"
+  }
+}
