@@ -40,12 +40,10 @@
 				<div ng-hide="cheese.editForm">
 					<div class="pull-right">
 						<a href="#" ng-click="cheese.editForm = true"><h2><i class="fa fa-pencil"></i></h2></a>
-						<a href="#" ng-click="index.deleteCheese(cheese)"><h2><i class="fa fa-times"></i></h2></a>
+						<a href="#" ng-click="index.deleteCheese(cheese)"><p><i class="fa fa-times"></i></p></a>
 					</div>
-					
-					<img ng-src="{{cheese.image}}" class="img-responsive">
-					
 					<h1 class="list-group-item-text" id="cheese-name">{{cheese.name}}</h1>
+					<img ng-src="{{cheese.image}}" class="img-responsive">
 					<br>
 					<!-- <div class="some-indent"> -->
 					<blockquote> 

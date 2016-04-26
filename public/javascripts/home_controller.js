@@ -22,6 +22,7 @@ function HomeController(Cheese) {
 	};
 
 	vm.deleteCheese = function(cheese) {
+		console.log(cheese);
 		Cheese.remove({ id: cheese._id });
 		var cheeseIndex = vm.cheeses.indexOf(cheese);
 		vm.cheeses.splice(cheeseIndex, 1);

@@ -1,8 +1,8 @@
 // require express and other modules
-var app = require('./config')
+var app = require('./config');
 var path = require('path');
 var cheesesController = require('./controllers/cheesesController');
-require('./routes')
+require('./routes');
 
   
 app.get('*', function (req, res) {

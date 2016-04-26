@@ -23,7 +23,8 @@ var cheesesController = {
 	},
 
 	destroy: function(req, res) {
-		Cheese.remove({_id: req.params.id}, function(err,image) {
+		Cheese.remove({_id: req.params.id}, function(err, cheese) {
+			console.log(cheese);
 			err ?
 				res.status(500).send() :
 				res.status(204).send(JSON.stringify(cheese));

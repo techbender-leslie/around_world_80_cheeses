@@ -3,7 +3,7 @@ var mongoose = require('mongoose'),
 
 var CheeseSchema = new Schema({
 	name : {type : String, default: ''},
-	rating: {type: Number, default: ''},
+	rating: {type: Number, min: 0, max: 5, default: ''},
 	type: {type : String, default: ''},
 	country: {type: String, default: ''},
 	region: {type: String, default: ''},
