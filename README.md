@@ -1,7 +1,9 @@
 <h2> Around the World in 80 Cheeses</h2>
 **If there ever were a pure passion project this would be it.**
 **I love cheese, unequivocally, love it. This project is a work in progress in dedication to my love**
-![picture alt](public/images/mouse_in_action.jpg)![picture alt](public/images/other)
+
+![picture alt](public/images/around_80.png)
+
 <h3>Technology used</h3>
 <ul>
   <li>My own API backend</li>
