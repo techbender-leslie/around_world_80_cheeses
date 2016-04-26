@@ -1,7 +1,7 @@
 <h2> Around the World in 80 Cheeses</h2>
 <h3>A MEAN stack Single Page App for all things cheese! </h3>
 **If there ever were a pure passion project this would be it.**
-**I love cheese, unequivocally, love it. This project is a work in progress in dedication to my love**
+**I love cheese, unequivocally, love it. <br>This project is a work in progress in dedication to my love**
 
 ![picture alt](public/images/around_80.png)
 
